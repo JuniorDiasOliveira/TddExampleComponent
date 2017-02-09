@@ -5,7 +5,7 @@ describe("taskList.Factory test - ", function () {
     beforeEach(module('tasklist'));
 
     beforeEach(inject(function (_taskListFactory_) {
-        taskListFactory = _taskListFactory_;
+        taskListFactory = _taskListFactory_.Create();
     }));
 
     it('Should add a new task and return it from the inside of list', function () {

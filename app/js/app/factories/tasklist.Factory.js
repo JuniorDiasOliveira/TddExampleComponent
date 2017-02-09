@@ -4,28 +4,34 @@ taskListFactory.$inject = ["Status"];
 
 function taskListFactory(status) {
 
-    var taskListItens = [];
+    var _taskListItens = [];
 
     return {
-        addItem: addItem,
-        getAllItens: getAllItens,
-        removeItem: removeItem,
+        Create: Create
+    }
+
+    function Create() {
+        return {
+            addItem: addItem,
+            getAllItens: getAllItens,
+            removeItem: removeItem,
+        }
     }
 
     function addItem(item) {
         item.Id = Math.random();
         item.Status = status.Added;
-        taskListItens.push(item);
+        _taskListItens.push(item);
     }
 
     function getAllItens() {
-        return taskListItens.filter(function (item) {
+        return _taskListItens.filter(function (item) {
             return item.Status === status.Added;
         });
     }
 
     function removeItem(item) {
-        taskListItens.filter(function (x) {
+        _taskListItens.filter(function (x) {
             return x.Id === item.Id;
         })[0].Status = status.Removed;
     }
