@@ -7,4 +7,4 @@
 - Test HTML template of components.
 
 ## How to Use
-- Download, follow the TODO steps below and enjoy!
+- Download, follow the TODO steps above and enjoy!
