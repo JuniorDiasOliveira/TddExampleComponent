@@ -1,5 +1,5 @@
-# Project developed to learn/teach front TDD
-> Using karma, jasmine and phantomjs, and Miligram as CSS lib
+# Project developed to learn/teach TDD in the front-end
+> Using Karma, Jasmine, AngularJS 1.5, PhantomJs as browser and Miligram as CSS lib
 
 ## TODO
 - Turn the controller and HTML into a separated component.
