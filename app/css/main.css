@@ -1,0 +1,11 @@
+body{
+    padding: 10px;
+    background-color: #f9f9f9
+}
+h3{
+    margin-top: 10px;
+}
+.task-list-container{
+    padding-left: 20px;
+    width: 50%;
+}
